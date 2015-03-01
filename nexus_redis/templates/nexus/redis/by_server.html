@@ -10,8 +10,8 @@
 
 {% block content %}
     <ul class="tabs">
-        <li><a href="{% url redis:index %}">All Connections</a></li>
-        <li class="active"><a href="{% url redis:by-server %}">Physical Hosts</a></li>
+        <li><a href="{% url 'redis:index' %}">All Connections</a></li>
+        <li class="active"><a href="{% url 'redis:by-server' %}">Physical Hosts</a></li>
     </ul>
     <p>Displaying statistics for {{ cache_stats|length }} physical host{{ cache_stats|length|pluralize }}</p>
     <ul class="server-list">
